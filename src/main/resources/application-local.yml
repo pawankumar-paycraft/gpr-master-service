@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties.hibernate.temp.use_jdbc_metadata_defaults: false
+  datasource:
+    url: jdbc:postgresql://172.16.129.52:5432/gpr_masterdb?currentSchema=sandbox_master_gpr
+    username: sandbox_master_gpr
+    password: asdf1234
+    driverClassName: org.postgresql.Driver
+    hikari:
+      maxLifetime: 300000  # 5 minutes
